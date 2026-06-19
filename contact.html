@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+
+    <h1>Contact Me</h1>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            <br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <br><br>
+
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="+254 700 000 000">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Your Message</legend>
+
+            <label for="subject">Subject:</label><br>
+            <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Support Request</option>
+                <option value="feedback">Feedback</option>
+            </select>
+
+            <br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="6" cols="40"
+                placeholder="Type your message here..." minlength="50" required></textarea>
+        </fieldset>
+
+        <br>
+
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Subscribe to newsletter</label>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+  </html>
